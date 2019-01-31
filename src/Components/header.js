@@ -9,8 +9,8 @@ const Header = (props) => {
         <View style={viewStyle}>
             <Text style={textStyle}>{props.headerText}</Text>
         </View>
-    )
-}
+    );
+};
 
 const styles = {
     viewStyle: {
@@ -35,7 +35,7 @@ const styles = {
         fontSize: 23,
         fontFamily: 'Vazir'
     }
-}
+};
 
 //make the component available to other part of the app 
 export default Header;
