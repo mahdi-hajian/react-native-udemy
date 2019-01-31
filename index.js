@@ -1,10 +1,16 @@
-/**
- * @format
- * @lint-ignore-every XPLATJSCOPYRIGHT1
- */
+// import a library
+import React from 'react';
+import { View, AppRegistry } from 'react-native';
+import Header from './src/Components/header';
+import AlbumsList from './src/Components/albumsList';
 
-import {AppRegistry} from 'react-native';
-import App from './App';
-import {name as appName} from './app.json';
+// create a Component
+const App = () => (
+    <View>
+        <Header headerText='آلبوم!' />
+        <AlbumsList />
+    </View>
+);
 
-AppRegistry.registerComponent(appName, () => App);
+// render it to the device
+AppRegistry.registerComponent('albums', () => App);
